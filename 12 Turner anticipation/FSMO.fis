@@ -1,0 +1,81 @@
+[System]
+Name='FSMO'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=19
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input(u)'
+Range=[-180 180]
+NumMFs=19
+MF1='NB3':'sigmf',[-0.2756 -170.1]
+MF2='NB2':'gaussmf',[11.1 -160]
+MF3='NB1':'gaussmf',[11.1 -140]
+MF4='NM3':'gaussmf',[11.1 -120]
+MF5='NM2':'gaussmf',[11.1 -100]
+MF6='NM1':'gaussmf',[11.1 -80]
+MF7='NS3':'gaussmf',[11.1 -60]
+MF8='NS2':'gaussmf',[11.1 -40]
+MF9='NS1':'gaussmf',[11.1 -20]
+MF10='Z':'gaussmf',[11.1 0]
+MF11='PS1':'gaussmf',[11.1 20]
+MF12='PS2':'gaussmf',[11.1 40]
+MF13='PS3':'gaussmf',[11.1 60]
+MF14='PM1':'gaussmf',[11.1 80]
+MF15='PM2':'gaussmf',[11.1 100]
+MF16='PM3':'gaussmf',[11.1 120]
+MF17='PB1':'gaussmf',[11.1 140]
+MF18='PB2':'gaussmf',[11.1 160]
+MF19='PB3':'sigmf',[0.2756 170]
+
+[Output1]
+Name='sat(u)'
+Range=[-200 200]
+NumMFs=19
+MF1='NB3':'sigmf',[-0.2756 -170]
+MF2='NB2':'gaussmf',[11.1 -160]
+MF3='NB1':'gaussmf',[11.1 -140]
+MF4='NM3':'gaussmf',[11.1 -120]
+MF5='NM2':'gaussmf',[11.1 -100]
+MF6='NM1':'gaussmf',[11.1 -80]
+MF7='NS3':'gaussmf',[11.1 -60]
+MF8='NS2':'gaussmf',[11.1 -40]
+MF9='NS1':'gaussmf',[11.1 -20]
+MF10='Z':'gaussmf',[11.1 0]
+MF11='PS1':'gaussmf',[11.1 20]
+MF12='PS2':'gaussmf',[11.1 40]
+MF13='PS3':'gaussmf',[11.1 60]
+MF14='PM1':'gaussmf',[11.1 80]
+MF15='PM2':'gaussmf',[11.1 100]
+MF16='PM3':'gaussmf',[11.1 120]
+MF17='PB1':'gaussmf',[11.1 140]
+MF18='PB2':'gaussmf',[11.1 160]
+MF19='PB3':'sigmf',[0.2756 170]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1
+6, 6 (1) : 1
+7, 7 (1) : 1
+8, 8 (1) : 1
+9, 9 (1) : 1
+10, 10 (1) : 1
+11, 11 (1) : 1
+12, 12 (1) : 1
+13, 13 (1) : 1
+14, 14 (1) : 1
+15, 15 (1) : 1
+16, 16 (1) : 1
+17, 17 (1) : 1
+18, 18 (1) : 1
+19, 19 (1) : 1
